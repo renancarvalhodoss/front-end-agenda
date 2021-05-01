@@ -5,6 +5,7 @@ import Routes from "./routes/routes";
 import {AuthProvider} from './components/context/context';
 
 function App() {
+  localStorage.setItem('token',"143r71621seg3t48dys9mu0urËW%WE$%Ë#$er");
 
   return (
     <>
