@@ -132,7 +132,7 @@ const Cadastro = () => {
                 </div>
 
                 <div className="container formulario ">
-                    <form onSubmit={Submit} ref={inputemail} className="mb-3 row ">
+                    <form onSubmit={Submit} ref={inputemail} >
                         <div className="linebtn card-create ">
                             <div className="mb-3  ">
                                 <label className="col-sm-3 col-form-label">DATA:</label>
@@ -156,21 +156,26 @@ const Cadastro = () => {
                             </div>
                         }
 
-                        <div className=" card-create text-center b2  ">
-                            <div className="card-body">
+                        <div className="  b2 text-center ">
+                            <div className="card-body ">
+                                
                                 <h5 className="card-title">{frase}</h5>
-                                <div className="counter">
+                                <button onClick={Tpost} type="button" className="btn btn-success "><BsPlus />add</button>
+
+                                
+
                                     <div className="card-text card-conv btn-dark">
-                                        CONVIDADOS <span className="badge bg-light">{nconv}</span>
+                                       CONVIDADOS <span className="badge bg-light">{nconv}</span>
                                     </div>
-                                    <button onClick={Tpost} type="button" className="btn btn-success line"><BsPlus />add</button> <br />
-                                </div>
+                                    <br />
+
+
                             </div>
                         </div>
                         {campos && <div className="user-login__campos">Por favor preencha todos os campos</div>}
 
                         <div className="d-grid gap-2 btn-submit d-md-block">
-                            <button className="btn btn-dark btn-env" name="btn_save" type="submit">SALVAR</button>
+                            <button className="btn btn-dark btn-env line" name="btn_save" type="submit">SALVAR</button>
                         </div>
                     </form>
                 </div>
